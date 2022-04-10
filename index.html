@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  
+  <head>
+    <meta charset="utf-8"/>  
+    <title>Decodificador de Texto</title>
+    <script src="./js/funcoes.js"></script>
+    <link rel="stylesheet" type="text/css"  href="./css/estilo.css"/>
+  </head>
+  <body>
+  <form id="formulario">
+
+  <h1>Encriptador Desencriptador de Texto</h1>  
+  <table>
+  <tr>
+
+     <td align="center">Digite para criptografar</td>
+     <td align="center">Criptografado</td>
+     <td align="center">Descriptografado</td>
+  </tr>
+
+  <tr>
+    <td align="center">
+       <textarea name="txt_1" id="txt_1" rows="5" ></textarea>
+       <br/>
+       <input type="button" value="Encriptar" id="btn1"  class="button1" onclick = "encriptar();">
+       </input>
+    </td>
+   <td align="center">
+      <textarea name="txt_2" id="txt_2" rows="5" disabled="true" ></textarea>
+      <br/>
+      <input type="reset" value="Limpar"  class="button2" id="btn2" />
+   </td>
+   <td align="center">
+    <textarea name="txt_3" id="txt_3" rows="5" disabled="true"></textarea>
+    <br/>
+    <input type="button" value="Desencriptar" id="btn3" class="button3" onclick="desencriptar()"/>
+ </td>
+</tr>
+</table>  
+</form>
+</body>
+</html>
