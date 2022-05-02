@@ -7,37 +7,28 @@
     <script src="./js/funcoes.js"></script>
     <link rel="stylesheet" type="text/css"  href="./css/estilo.css"/>
   </head>
-  <body>
+  <body class="pagina">
   <form id="formulario">
 
-  <h1>Encriptador Desencriptador de Texto</h1>  
-  <table>
-  <tr>
+   <img src="./imagens/Vector.svg"></img>
+  
 
-     <td align="center">Digite para criptografar</td>
-     <td align="center">Criptografado</td>
-     <td align="center">Descriptografado</td>
-  </tr>
-
-  <tr>
-    <td align="center">
-       <textarea name="txt_1" id="txt_1" rows="5" ></textarea>
-       <br/>
-       <input type="button" value="Encriptar" id="btn1"  class="button1" onclick = "encriptar();">
+    
+      
+ 
+       <textarea name="txt_1" id="txt_1" class="quadrado" placeholder="Digite seu texto" >
+       </textarea>  
+      
+      <textarea name="txt_2" id="txt_2"  disabled="true" class="retangulo" >
+      </textarea>
+      <div class="frame3">
+        <input type="button" value="Encriptar" id="btn1"  class="button" onclick = "encriptar();"/>
+        <input type="button" value="Desencriptar" id="btn3" class="button" onclick="desencriptar()"/>
        </input>
-    </td>
-   <td align="center">
-      <textarea name="txt_2" id="txt_2" rows="5" disabled="true" ></textarea>
-      <br/>
-      <input type="reset" value="Limpar"  class="button2" id="btn2" />
-   </td>
-   <td align="center">
-    <textarea name="txt_3" id="txt_3" rows="5" disabled="true"></textarea>
-    <br/>
-    <input type="button" value="Desencriptar" id="btn3" class="button3" onclick="desencriptar()"/>
- </td>
-</tr>
-</table>  
+       <input type="button" value="Copiar" id="btn4" class="button" onclick="desencriptar()"/>
+    </div>
+
+  
 </form>
 </body>
 </html>
