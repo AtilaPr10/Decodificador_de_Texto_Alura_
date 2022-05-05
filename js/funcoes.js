@@ -64,8 +64,18 @@ function desencriptar() {
        }
        texto += (CHAR(len));
     }
-    document.getElementById("txt_3").value =  texto;  
-
+    // document.getElementById("txt_3").value =  texto;  
+    alert ("O texto decodificado é "+ texto );
 }
+//Funcao para copiar o texto
+async function copiar(){
 
-     
+      var   texto_copiado = document.getElementById("txt_2").value;
+         try {
+            await navigator.clipboard.writeText(texto_copiado);
+            alert("Texto copiado utilize CTRL+V para colar");
+          } catch (err) {
+            console.error('Failed to copy: ', err);
+          }
+
+}     

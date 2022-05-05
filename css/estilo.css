@@ -20,7 +20,21 @@
     margin: 0px 24px;
 }
 
+.frame1 {
+    /* Frame 1 */
+    /* Auto layout */
 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    position: absolute;
+    width: 252px;
+    height: 18px;
+    left: 240px;
+    top: 851px;
+
+}
 
 .frame3 {
     /* Frame 3 */
@@ -41,7 +55,30 @@
 
 }
 
+.button2 {
 
+    /* Button */
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    position: static;
+    width: 328px;
+    height: 67px;
+    left: 352px;
+    top: 0px;
+    /* Dark blue/dark-blue-300 */
+    border: 1px solid #0A3871;
+    box-sizing: border-box;
+    border-radius: 24px;
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 24px;
+
+}
 
 .pagina {
     /* Decodificador - 2 Desktop */
